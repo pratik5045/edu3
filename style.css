@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mons ;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    /* background-color: yellow; */
+}
+@font-face {
+    font-family: mons;
+    src: url(Montserrat-VariableFont_wght.ttf);
+}
+.achievement{
+    height: 60%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+.inner-part{
+    height: 100%;
+    width: 90%;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.inner-text{
+    width: 40%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 4vw;
+}
+.inner-text h5{
+    color: #007bff ;
+    font-size: 2.5vh;
+}
+.inner-text h2{
+    margin-top: .5vw;
+    color: #003078 !important;
+}
+.inner-text p{
+    margin-top: .5vw;
+    font-size: 2vh;
+    color: #555;
+}
+.inner-image{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.circ{
+    position: absolute;
+    height: 60vh;
+}
+.circ1{
+    position: absolute;
+    height: 60vh;
+}
+
+.inner-image .rotate {
+    animation: rotate 15s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
